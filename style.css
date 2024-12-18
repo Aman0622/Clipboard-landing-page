@@ -1,0 +1,490 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/* color */
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(210, 10%, 33%);
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+/* css start */
+#section1 {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section1 p {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+.logo {
+  margin: 0 auto;
+  padding: 4rem 0 2rem 0;
+}
+#section1 h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 2rem 0 1rem 0;
+}
+#section1 h2 {
+  padding-top: 4rem;
+  font-size: 2rem;
+}
+#section1 button {
+  margin-top: 2rem;
+}
+#ios {
+  background-color: hsl(171, 66%, 44%);
+  height: 40px;
+  width: 15%;
+  box-shadow: 0px 0px 10px 1px hsl(171, 66%, 44%);
+  border-radius: 20px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+#mac {
+  background-color: hsl(233, 100%, 69%);
+  height: 40px;
+  width: 15%;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 10px 1px hsl(233, 100%, 69%);
+  border-radius: 20px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*  section 2 */
+
+#section2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0 2rem 0;
+  gap: 3rem;
+}
+#contant {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0 0 3rem;
+  width: 45%;
+}
+#contant h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#contant p {
+  width: 75%;
+}
+
+/* section3 */
+
+#section3 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem 0 0 0;
+}
+#contant2 h2 {
+  font-size: 3rem;
+}
+#contant2 p {
+  width: 50%;
+  margin: 0 auto;
+}
+#laptop {
+  margin: 0 auto;
+  padding: 5rem 0 0 0;
+}
+
+/* section4 */
+
+#contant3 h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 4rem 0 0 0;
+}
+#contant3 p {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.svg {
+  margin: 0 auto;
+  width: 13%;
+}
+.list {
+  width: 9%;
+}
+.preview {
+  width: 18%;
+}
+
+#icondiv {
+  display: flex;
+  padding: 5rem;
+  text-align: center;
+}
+
+#icondiv h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2.5rem 0 0 0;
+}
+#icondiv p {
+  width: 90%;
+  padding: 1rem 0 0 0;
+}
+
+/* section5 */
+
+#imgdiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0 0 0;
+}
+
+/* section6 */
+
+#section6 {
+  text-align: center;
+  padding: 6rem 0 0 0;
+}
+#section6 h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+#section6 p {
+  padding: 1rem 0 0 0;
+  width: 50%;
+  margin: 0 auto;
+}
+#section6 button {
+  margin: 3rem 1rem 0 0;
+}
+
+/* footer */
+
+.effect {
+  color: hsl(210, 10%, 33%);
+}
+.logo1 {
+  width: 50%;
+  padding: 1rem 0 0 0;
+}
+footer {
+  margin-top: 7rem;
+}
+.footer {
+  background-color: hsl(200, 16%, 85%);
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.list2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+.list3 {
+  display: flex;
+  flex-direction: column;
+}
+.socal {
+  width: 30%;
+  height: 40px;
+  padding: 1rem 1rem 0 0.5rem;
+  display: flex;
+}
+.facebook:hover {
+  color: hsl(171, 66%, 44%);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.effect:hover {
+  color: hsl(171, 66%, 44%);
+  transition: 1s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  #ios {
+    width: 20%;
+  }
+  #mac {
+    width: 20%;
+  }
+  #desktop {
+    width: 90%;
+  }
+  #contant {
+    width: 50%;
+    padding: 0;
+  }
+  #contant p {
+    width: 90%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  #ios {
+    width: 25%;
+  }
+  #mac {
+    width: 25%;
+  }
+  #desktop {
+    width: 90%;
+  }
+  #section2 {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #contant {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #contant h3 {
+    width: 100%;
+    font-size: 25px;
+    padding: 0;
+  }
+  #contant p {
+    width: 100%;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #section1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #section1 p {
+    width: 90%;
+  }
+  #ios {
+    margin: 0 auto;
+    width: 40%;
+  }
+  #mac {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  /* section2 */
+
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #desktop {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #contant {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #contant p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #contant h3 {
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+  }
+
+  /* section3 */
+
+  #contant2 h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  #contant2 p {
+    padding: 1rem 0 0 0;
+    width: 90%;
+  }
+
+  /* section4 */
+
+  #icondiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .svg {
+    width: 15%;
+    padding: 2rem 0 0 0;
+  }
+
+  .box p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* section5 */
+  #imgdiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .icon {
+    width: 30%;
+    padding: 5rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  /* section6 */
+
+  #section6 {
+    display: flex;
+    flex-direction: column;
+  }
+  #section6 p {
+    width: 90%;
+    padding: 2rem 0 2rem 0;
+  }
+  #section6 button {
+    margin: 1rem auto;
+  }
+
+  /* footer */
+  footer {
+    margin: 1rem 0 0 0;
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .footer p {
+    font-size: 20px;
+    /* padding: 1rem 0 0 0; */
+  }
+  .list2 {
+    padding: 0;
+  }
+  .list3 {
+    padding: 0;
+  }
+  .list4 {
+    padding: 0;
+  }
+  .logo1 {
+    width: 15%;
+    margin: 0 auto;
+  }
+  .nav {
+    padding: 2rem 0 0 0;
+    margin: 0 auto;
+  }
+  .socal {
+    width: 10%;
+    height: 70px;
+    padding: 2rem 0 0 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #ios {
+    margin: 0 auto;
+    width: 70%;
+  }
+  #mac {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
